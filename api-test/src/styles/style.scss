@@ -1,0 +1,23 @@
+@import '../assets/fonts/fonts.css';
+@import 'reset.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  line-height: normal;
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
