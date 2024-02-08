@@ -1,0 +1,18 @@
+.select_wrap {
+    width: 150px;
+    // position: relative;
+}
+
+select {
+    width: 100%;
+    position: relative;
+    option {
+        position: relative;
+        width: 100%;
+        color: red;
+        font-size: 16px;
+        background: darkcyan;
+        border-bottom: 1px black solid;
+    }
+}
+

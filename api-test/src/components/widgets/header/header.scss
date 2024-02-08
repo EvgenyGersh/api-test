@@ -1,0 +1,23 @@
+.header {
+    padding: 15px 40px;
+    border-bottom: 1px rgba(0, 0, 0, .5) solid;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+
+.logo {
+    width: 70px;
+    img {
+        max-width: 100%;
+    }
+}

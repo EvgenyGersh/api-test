@@ -1,6 +1,7 @@
-import Header from '../header/Header';
-import Main from '../main/Main';
-import Footer from '../footer/Footer'
+import Header from '../widgets/header/Header';
+import Main from '../widgets/main/Main';
+import Footer from '../widgets/footer/Footer'
+
 
 import './app.scss';
 
@@ -10,7 +11,6 @@ function App() {
       <Header/>
       <Main/>
       <Footer/>
-      
     </div>
   );
 }

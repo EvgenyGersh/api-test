@@ -1,0 +1,21 @@
+// .item_wrap {
+//     width: 24%;
+//     height: 100px;
+//     background-color: aqua;
+//     margin-bottom: 15px;
+// }
+
+.movie_item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 22%;
+    padding: 5px;
+    margin: 10px;
+    img {
+        width: 100%;
+    }
+    a {
+        width: 100%;
+        word-break:break-all
+    }
+}
