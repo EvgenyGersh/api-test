@@ -11,9 +11,9 @@ const Header = () => {
                 </a>
             </div>
             <nav className='nav'>
-                <p>Text</p>
-                <p>Text</p>
-                <p>Text</p>
+                <p>Catalogs</p>
+                <p>Genres</p>
+                
             </nav>
         </header>
     

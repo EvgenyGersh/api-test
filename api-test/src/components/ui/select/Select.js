@@ -1,24 +1,29 @@
 
-
+import { useState } from 'react';
 import './select.scss';
 
 
 const Select = (props) => {
-    
-    
-    
+   
     const opt = props.filterList
 
     return (
         <div className='select_wrap'>
-            <select name={props.name}>
+            <select name={props.name} 
+            onChange={props.onSelect}
+            >
                 {opt.map(o =>(
-                    <option key={o.id} value={o.value}>{o.value}</option>
+                    <option key={o.id}
+                     value={o.value}
+                    params={o.params}
+                    >{o.name}</option>
                 ))    
                 }
                 
             </select>
+           
         </div>
+       
     )
 }
 export default Select
