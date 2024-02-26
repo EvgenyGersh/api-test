@@ -1,17 +1,27 @@
+import React from 'react';
+import {BrowserRouter , Route, Routes} from 'react-router-dom';
 import Header from '../widgets/header/Header';
-import Main from '../widgets/main/Main';
 import Footer from '../widgets/footer/Footer'
+import {CatalogPage, GenresPage, SinglePage} from '../pages'
+
 
 
 import './app.scss';
 
 function App() {
+  
   return (
-    <div className="App">
-      <Header/>
-      <Main/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header/>
+        <Routes> 
+          <Route path="/" element={<CatalogPage/>}/>
+          <Route path="/genres" element={<GenresPage/>}/>
+          {/* <Route path="/singleId" element={<SinglePage/>}/> */}
+        </Routes>
+        <Footer/>
+      </div>
+     </BrowserRouter> 
   );
 }
 

@@ -6,3 +6,14 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.view_filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    img {
+        width: 20px;
+        cursor: pointer;
+    }
+}

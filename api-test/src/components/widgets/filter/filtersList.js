@@ -7,12 +7,7 @@ export const filterList = {
         params: 'movies',
          id: 1
        },
-    //    {
-    //     value: 'get-movie-news',
-    //     name: "movie-news",
-    //     params: 'news',
-    //     id: 2
-    //     },
+    
         {
         value: 'most-popular-movies',
         name: "most-popular",
@@ -22,43 +17,45 @@ export const filterList = {
         
     ],
     genres: [
-        {
-            value: 'action',
+        {   value: 'action',
+            params: {genre: 'action'},
             name: "action",
             id: 1
         },
         {
             value: 'comedy',
+            params: {genre: 'comedy'},
             name: "comedy",
             id: 2
         },
         {
             value: 'animation',
+            params: {genre: 'animation'},
             name: "animation",
             id: 3
         },
         {
             value: 'biography',
+            params: {genre: 'biography'},
             name: "biography",
             id: 4
         },
         {
             value: 'fantasy',
+            params: {genre: 'fantasy'},
             name: "fantasy",
             id: 5
         },
+        
         {
-            value: 'family',
-            name: "family",
-            id: 6
-        },
-        {
-            value: 'family',
+            value: 'get-by-genre',
+            params: {genre: 'family'},
             name: "family",
             id: 7
         },
         {
-            value: 'sport',
+            value: 'get-by-genre',
+            params: {genre: 'sport'},
             name: "sport",
             id: 8
         },

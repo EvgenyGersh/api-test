@@ -6,8 +6,11 @@ const Input = (props) => {
     const[value, setValue] = useState('');
 
     const onChange = (e) => {
-        setValue(e.target.value)
+        const value = e.target.value
+        setValue(value);
+        props.onInput(value)
     }
+
     return (
     <div className='input_wrap'>
         <input 

@@ -1,11 +1,10 @@
 
-import { useState } from 'react';
 import './select.scss';
 
 
 const Select = (props) => {
    
-    const opt = props.filterList
+    const opt = props.optList
 
     return (
         <div className='select_wrap'>
