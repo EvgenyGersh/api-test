@@ -2,6 +2,9 @@ import { useState } from 'react';
 import Catalog from '../widgets/catalog/Catalog';
 import Filter from '../widgets/filter/Filter';
 import { filterList } from '../widgets/filter/filtersList';
+import React from 'react';
+
+
 
 const CatalogPage = () => {
 
@@ -27,22 +30,22 @@ const CatalogPage = () => {
     }
 
     
-  const searchMovies = (items, terms) => {
-    if(terms.length === 0){
-      return items
-    }
-    return items.filter(item => {
-      return item.title.indexOf(terms) > -1
-    //   return item.title.toLowerCase().includes(terms.toLowerCase())
-    })
-  }
+  // const searchMovies = (items, terms) => {
+  //   if(terms.length === 0){
+  //     return items
+  //   }
+  //   return items.filter(item => {
+  //     return item.title.indexOf(terms) > -1
+  //   //   return item.title.toLowerCase().includes(terms.toLowerCase())
+  //   })
+  // }
 
     
 
     return (
         <div className='main_wrap'>
             <Filter onSelect={onSelect} name={categorys} activeView={activeView} onInput={onInput}/>
-            <Catalog  val={val} view={view} terms={terms} searchMovies={searchMovies}/>
+            <Catalog  val={val} view={view} terms={terms} />
         </div>
        
     )

@@ -27,21 +27,21 @@ const GenresPage = (props) => {
     }
 
 
-    const searchMovies = (items, terms) => {
-        if(terms.length === 0){
-          return items
-        }
-        return items.filter(item => {
-          return item.title.indexOf(terms) > -1
-        //   return item.title.toLowerCase().includes(terms.toLowerCase())
-        })
-      }
+    // const searchMovies = (items, terms) => {
+    //     if(terms.length === 0){
+    //       return items
+    //     }
+    //     return items.filter(item => {
+    //       return item.title.indexOf(terms) > -1
+    //     //   return item.title.toLowerCase().includes(terms.toLowerCase())
+    //     })
+    //   }
 
       
     return (
         <div className='main_wrap'>
             <Filter onSelect={onSelect} name={genres} activeView={activeView} onInput={onInput}/>
-            <Catalog  val={'get-by-genre'} params={params} view={view} terms={terms} searchMovies={searchMovies}/>
+            <Catalog  val={'get-by-genre'} params={params} view={view} terms={terms} />
         </div>
        
     )

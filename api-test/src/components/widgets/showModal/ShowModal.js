@@ -2,8 +2,6 @@ import './showModal.scss'
 
 const ShowModal = (props) => {
 
-    console.log(props)
-
     return (
        <div className='modal' onClick={() =>props.modalShow()}>
         <div className='modal_item'>

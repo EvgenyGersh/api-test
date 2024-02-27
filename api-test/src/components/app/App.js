@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter , Route, Routes} from 'react-router-dom';
 import Header from '../widgets/header/Header';
 import Footer from '../widgets/footer/Footer'
-import {CatalogPage, GenresPage, SinglePage} from '../pages'
+import {CatalogPage, GenresPage} from '../pages'
 
 
 
